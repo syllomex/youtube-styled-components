@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import {
   Container,
   Separator,
@@ -30,9 +30,8 @@ const channels = [1, 2, 3, 4, 5];
 
 function SideNav() {
   const { state, setState } = useContext(ButtonsContext);
-  const [absolute, setAbsolute] = useState(false);
 
-  handleSideNav({ state, setState, absolute, setAbsolute });
+  handleSideNav({ state, setState });
 
   useEffect(() => {
     setState({
@@ -45,7 +44,7 @@ function SideNav() {
   useEffect(() => {}, []);
 
   return (
-    <Container active={state.sidenav} absolute={absolute}>
+    <Container active={state.sidenav}>
       <List>
         <ListItem>
           <HomeIcon />
@@ -171,7 +170,7 @@ export function toggleSideNav({ state, setState }) {
   }));
 }
 
-function handleSideNav({ state, setState, absolute, setAbsolute }) {
+function handleSideNav({ state, setState }) {
   let screen = window.matchMedia("(max-width: 1100px)");
   let screenSmall = window.matchMedia("(max-width: 600px)");
 
@@ -181,13 +180,11 @@ function handleSideNav({ state, setState, absolute, setAbsolute }) {
         ...state,
         sidenav: false
       }));
-      setAbsolute(true);
     } else {
       setState(state => ({
         ...state,
         sidenav: true
       }));
-      setAbsolute(false);
     }
     if (screenSmall.matches && !state.searchbarFocus) {
       setState(state => ({ ...state, searchbar: false }));
@@ -200,13 +197,11 @@ function handleSideNav({ state, setState, absolute, setAbsolute }) {
         sidenav: false,
         searchbar: false
       });
-      setAbsolute(true);
     } else {
       setState({
         sidenav: true,
         searchbar: true
       });
-      setAbsolute(false);
     }
   };
 }

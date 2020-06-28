@@ -18,11 +18,10 @@ import {
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  position: ${props => (props.absolute ? "absolute" : "relative")};
+  position: relative;
   background-color: var(--primary);
   height: calc(100vh - 56px);
-  width: ${props =>
-    props.active ? (props.absolute ? "240px" : "300px") : "0px"};
+  width: ${props => props.active ? "300px" : "0px"};
   transition: width 0.2s;
   overflow-y: auto;
 
@@ -32,6 +31,11 @@ export const Container = styled.div`
   }
   &::-webkit-scrollbar-thumb {
     background-color: var(--quinary);
+  }
+
+  @media (max-width: 1100px) {
+    position: absolute;
+    width: ${props => props.active ? "240px" : "0px"};
   }
 `;
 

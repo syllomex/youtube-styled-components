@@ -61,7 +61,7 @@ export const SearchbarOver = styled.div`
   user-select: none;
   position: absolute;
   background-color: var(--primary);
-  width: ${(props) => (props.searchbar ? "100%" : "0")};
+  width: 100%;
   height: 56px;
   z-index: 10;
 

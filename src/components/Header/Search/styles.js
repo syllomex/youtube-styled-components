@@ -40,7 +40,6 @@ export const Container = styled.div`
     justify-content: left;
     padding-left: 10px;
     display: none;
-    /* display: flex; */
     display: ${(props) => (props.searchbar === true ? "flex" : "none")};
 
     input {
