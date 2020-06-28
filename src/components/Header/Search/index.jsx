@@ -16,8 +16,8 @@ function Search() {
   const searchRef = useRef();
 
   useEffect(() => {
-    if (state.searchbar) searchRef.current.focus();
-  }, [state.searchbar]);
+    if (state.searchbarFocus) searchRef.current.focus();
+  }, [state.searchbarFocus]);
 
   return (
     <>

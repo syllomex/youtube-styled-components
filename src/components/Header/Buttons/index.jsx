@@ -35,7 +35,7 @@ function Buttons() {
       </IconContainer>
 
       <IconSearchContainer
-        onClick={() => setState({ sidenav: false, searchbar: true })}
+        onClick={() => setState({ sidenav: false, searchbar: true, searchbarFocus: true })}
       >
         <IconSearch />
       </IconSearchContainer>
