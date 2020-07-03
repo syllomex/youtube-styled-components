@@ -24,6 +24,7 @@ export const Container = styled.div`
   width: ${props => props.active ? "300px" : "0px"};
   transition: width 0.2s;
   overflow-y: auto;
+  z-index: 5;
 
   &::-webkit-scrollbar {
     background-color: var(--tertiary);

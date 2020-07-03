@@ -3,7 +3,8 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 
 body {
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
+    overflow-y: none;
   }
   
 body, html, #root {
@@ -28,13 +29,14 @@ body, html, #root {
     --quaternary: ${(props) => props.theme.quaternary};
     --quinary: ${(props) => props.theme.quinary};
     --senary: ${(props) => props.theme.senary};
-
+    
     --text-primary: ${(props) => props.theme.textPrimary};
     --text-secondary: ${(props) => props.theme.textSecondary};
     --text-tertiary: ${(props) => props.theme.textTertiary};
     --text-quaternary: ${(props) => props.theme.textQuaternary};
     --text-quinary: ${(props) => props.theme.textQuinary};
     --text-senary: ${(props) => props.theme.textSenary};
+
 
     --text-link: ${(props) => props.theme.link};
 }
