@@ -12,4 +12,6 @@ Os pontos que gostaria de destacar nesse projeto são:
 - A organização dos componentes que facilita a escalabilidade e a alteração, tanto de dados quanto da própria estilização.
 - O sistema do menu desenvolvido com hooks e context API do React.
 
+** Essa foi minha primeira vez utilizando Styled Components, por isso algumas coisas ainda estão um pouco desorganizadas. Pretendo atualizar futuramente, alterando também o CSS para grid **
+
 [Portfólio completo](https://leonardosantos.herokuapp.com)
