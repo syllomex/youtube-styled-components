@@ -4,7 +4,7 @@
 ---
 ## Essa é uma recriação da página inicial do YouTube utilizando ReactJS Styled Components!
 
-#### Você pode ver a página em funcionamento [clicando aqui](https://leonardosantos.herokuapp.com/youtube).
+#### Você pode ver a página [clicando aqui](https://leonardosantos.herokuapp.com/youtube).
 
 Essa é uma simples recriação da página inicial do YouTube utilizando ReactJS com Styled Components.
 
