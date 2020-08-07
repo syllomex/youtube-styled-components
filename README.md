@@ -8,10 +8,7 @@
 
 Essa é uma simples recriação da página inicial do YouTube utilizando ReactJS com Styled Components.
 
-Os pontos que gostaria de destacar nesse projeto são:
-- Minha capacidade de reproduzir em código (HTML, CSS e JS) um protótipo (no caso, a própria interface do YouTube).
-- A organização dos componentes com Styled Components que facilita a escalabilidade e a alteração, tanto de dados quanto da própria estilização.
-- O sistema do menu desenvolvido com hooks e context API do React.
+O que tentei demonstrar com esse projeto é minha capacidade de desenvolver uma página perfeitamente responsiva a partir de um protótipo (no caso, a própria interface do YouTube), utilizando conhecimentos de HTML, CSS e JS combinados com tecnologias mais atuais, como o Styled Components e a Context API do React.
 
 **Essa foi minha primeira vez utilizando Styled Components, por isso algumas coisas ainda estão um pouco desorganizadas. Pretendo atualizar futuramente, alterando também o CSS para grid**
 
